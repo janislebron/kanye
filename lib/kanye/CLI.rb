@@ -22,7 +22,6 @@ class CLI
     end
   end
 
-  end
 
   def more
     #what user would like to do next
