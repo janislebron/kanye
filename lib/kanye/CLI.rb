@@ -6,8 +6,8 @@ class CLI
 
   def start
     puts "!!!! Are you ready to be great today?"
-    new_quote
-    input
+    API.new_quote
+    self.input
     more
   end
 
@@ -15,8 +15,8 @@ class CLI
     #get user input
     puts "Type 'enlightened' to receive your daily nugget of gold."
     user_input = gets.strip.downcase
-    if user_input == "enlightened"
-      then Kanye
+    if user_input == "enlightened" 
+      then give_quote
     else
       puts "How else would you to level up today..?"
     end
@@ -28,8 +28,14 @@ class CLI
     puts "Would you like to receive more knowledge today?"
     puts "Type 'y' if you love yourself."
     if user_input == "y"
-      then Kanye
+      then give_quote
     else "Maybe you'll feel more inspired tomorrow."
+    end
+  end
+
+  def give_quote
+    Kanye.all do |quote|
+      puts "#{quote}"
     end
   end
 end
