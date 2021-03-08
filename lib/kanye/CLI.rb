@@ -6,7 +6,7 @@ class CLI
 
   def start
     puts "!!!! Are you ready to be great today?"
-    daily_quote
+    new_quote
     input
     more
   end
