@@ -1,5 +1,5 @@
 class API
-  #how people will receive their knowledge
+  #how people will receive the quote
 
   def self.new_quote
     url = "http://www.https://api.kanye.rest/"

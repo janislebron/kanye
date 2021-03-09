@@ -1,5 +1,5 @@
 class Kanye
-  #receives Kanye quote
+  #Kanye quotes stored
   attr_accessor :quote
   @@all = []
 

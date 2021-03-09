@@ -13,12 +13,12 @@ class CLI
 
   def input
     #get user input
-    puts "Type 'enlightened' to receive your daily nugget of gold."
+    puts "Type 'enlightened' to receive your daily dose of wisdom."
     user_input = gets.strip.downcase
     if user_input == "enlightened" 
       then give_quote
     else
-      puts "How else would you to level up today..?"
+      puts "How else would you level up today..?"
     end
   end
 
@@ -29,7 +29,7 @@ class CLI
     puts "Type 'y' if you love yourself."
     if user_input == "y"
       then give_quote
-    else "Maybe you'll feel more inspired tomorrow."
+    else "Maybe you'll decide to be great tomorrow."
     end
   end
 
