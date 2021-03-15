@@ -5,9 +5,9 @@ require 'json'
 
 ## require all files that will be used
 
-require_relative "./lib/API"
-require_relative "./lib/CLI"
-require_relative "./lib/kanye"
+require_relative "./kanye/API.rb"
+require_relative "./kanye/CLI.rb"
+require_relative "./kanye/kanye.rb"
 
 require "kanye/version"
 
